@@ -42,4 +42,5 @@ def get_register_api(request):
     return Response(data, status=status.HTTP_200_OK)
 
 
-
+def login(request):
+    return render(request, 'store/login.html')
