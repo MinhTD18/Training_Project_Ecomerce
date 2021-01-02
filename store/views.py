@@ -44,3 +44,8 @@ def get_register_api(request):
 
 def login(request):
     return render(request, 'store/login.html')
+
+
+def register(request):
+    return render(request, 'store/register.html')
+
