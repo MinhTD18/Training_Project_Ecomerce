@@ -34,22 +34,20 @@
                                         <input id="pass" class="form-control ipt-control" placeholder="Password" type="password"/>
                                         <label for="pass" class="lbl-name">Password</label>
                                     <small class="text-danger err-msg" id="mess"></small>
-
                                     </div>
                                 </div>
                                 <div class="form-footer">
                                     <button class="btn btn-primary" onclick="login()">Login</button>
                                     <div>
                                     <small id="forgot">Don't remember your password?
-                                        <a href="./resetpass.html">Click here</a>
-
+                                        <a href="#">Click here</a>
                                     </small>
                                     </div>
                                 </div>
                                 <div id="register">
                                     <h6>
                                         Not registered?
-                                        <a href="./register.html">Create an account</a>
+                                        <a href="{% url 'register' %}">Create an account</a>
                                     </h6>
                                 </div>
                              </div>
