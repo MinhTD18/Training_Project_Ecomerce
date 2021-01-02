@@ -1,6 +1,6 @@
 body{
     /* background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%); */
-     background-image: url('./img/background/low-angle-photography-of-city-street-with-snow-3396883.jpg');
+     background-image: url('../img/background/low-angle-photography-of-city-street-with-snow-3396883.jpg');
      background-size: cover;
      background-repeat: no-repeat;
      background-position: center;
@@ -9,7 +9,7 @@ body{
      min-height: 100vh;
  }
  .bg_img{
-     background-image: url('./img/background/background-with-violet-blue-tropical-leaves_52683-36496.jpg');
+     background-image: url('../img/background/background-with-violet-blue-tropical-leaves_52683-36496.jpg');
      background-size: cover;
      background-repeat: no-repeat;
  }
@@ -22,7 +22,7 @@ body{
      background-color: white;
      border-radius: 10px;
      margin: 0 auto;
-     background-image: url('./img/background/abstract-gray-dotted-pattern-background_1035-18653.jpg');
+     background-image: url('../img/background/abstract-gray-dotted-pattern-background_1035-18653.jpg');
      background-size:cover ;
      background-repeat: no-repeat;
  }
