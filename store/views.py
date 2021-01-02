@@ -49,3 +49,7 @@ def login(request):
 def register(request):
     return render(request, 'store/register.html')
 
+
+def reset_password(request):
+    return render(request, 'store/resetpass.html')
+
