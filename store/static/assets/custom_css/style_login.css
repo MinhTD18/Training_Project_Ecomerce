@@ -12,19 +12,19 @@ body{
      background-image: url('../img/background/background-with-violet-blue-tropical-leaves_52683-36496.jpg');
      background-size: cover;
      background-repeat: no-repeat;
+     border-radius: 0 20px 20px 0;
+
  }
  .form-login-content{
      min-height: 400px;
+    
  }
  .form-login{
-     padding: 20px;
      width: 90%;
      background-color: white;
-     border-radius: 10px;
+     border-radius: 20px;
      margin: 0 auto;
-     background-image: url('../img/background/abstract-gray-dotted-pattern-background_1035-18653.jpg');
-     background-size:cover ;
-     background-repeat: no-repeat;
+    
  }
  .form-body-item{
      position: relative;
