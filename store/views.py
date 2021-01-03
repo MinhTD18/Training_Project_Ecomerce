@@ -3,9 +3,9 @@ from django.contrib.auth.models import User, auth
 from django.contrib import messages
 
 
-def store(request):
+def main(request):
     context = {}
-    return render(request, 'store/store.html', context)
+    return render(request, 'store/main.html', context)
 
 
 def cart(request):
