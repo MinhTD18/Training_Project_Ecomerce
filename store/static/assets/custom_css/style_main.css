@@ -26,7 +26,7 @@ html{
     top:0;
     left: 0;
     right: 0;
-    
+
 }
 
 #nav{
@@ -42,14 +42,14 @@ html{
 }
 
 #nav li{
-    
+
     position: relative;
-    
+
 }
 
 #nav > li > a{
     color: #5d5d5d;
-    
+
 }
 
 #nav > li:first-child
@@ -59,12 +59,12 @@ html{
 }
 
 #nav li a{
-    
+
     text-decoration: none;
     line-height: 80px;
     padding: 0 24px;
     display: block;
-    
+
 }
 
 #nav li:hover .subnav {
@@ -76,7 +76,7 @@ html{
 #nav > li:hover >a{
     color: #000;
     background-color: #ccc;
-    
+
 }
 
 #nav .nav-down
@@ -85,7 +85,7 @@ html{
 }
 
 #nav .subnav{
-    display:  none; 
+    display:  none;
     min-width: 160px;
     position: absolute;
     top:100%;
@@ -96,7 +96,7 @@ html{
 }
 
 #nav .subnav a{
-    
+
     color:#5d5d5d;
     padding: 0 16px;
     line-height: 38px;
@@ -127,7 +127,7 @@ html{
 
 /* slider */
 #slider
-{   
+{
      margin-top:80px;
     font-family: sans-serif;
     overflow-x: hidden;
@@ -208,7 +208,7 @@ html{
 
 #content{
 
-    
+
 }
 
 
