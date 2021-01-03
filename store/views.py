@@ -1,9 +1,6 @@
-from django.shortcuts import render
-
-# Create your views here.
-from rest_framework import status
-from rest_framework.decorators import api_view
-from rest_framework.response import Response
+from django.shortcuts import render, redirect
+from django.contrib.auth.models import User, auth
+from django.contrib import messages
 
 
 def store(request):
@@ -21,35 +18,46 @@ def checkout(request):
     return render(request, 'store/checkout.html', context)
 
 
-@api_view(['GET'])
-def get_register_api(request):
-    full_name = request.GET.get('full_name')
-    user_name = request.GET.get('user_name')
-    email = request.GET.get('email')
-    password = request.GET.get('password')
-    phone_number = request.GET.get('phone_number')
-    address = request.GET.get('address')
-
-    data = {
-        'full_name': full_name,
-        'user_name': user_name,
-        'email': email,
-        'password': password,
-        'phone_number': phone_number,
-        'address': address,
-    }
-
-    return Response(data, status=status.HTTP_200_OK)
-
-
 def login(request):
-    return render(request, 'store/login.html')
+    if request.method == 'POST':
+        username = request.POST['username']
+        password = request.POST['password']
+
+        user = auth.authenticate(username=username, password=password)
+        if user is not None:
+            auth.login(request, user)
+            return redirect('/')
+        else:
+            messages.info(request, 'Username or Password is not correct')
+            return redirect('login')
+    else:
+        return render(request, 'store/login.html')
 
 
 def register(request):
+    if request.method == 'POST':
+        username = request.POST['username']
+        password1 = request.POST['password1']
+        password2 = request.POST['password2']
+        email = request.POST['email']
+        if password1 == password2:
+            if User.objects.filter(username=username).exists():
+                messages.info(request, 'Username is taken')
+                return redirect('register')
+            elif User.objects.filter(email=email).exists():
+                messages.info(request, 'Email is taken')
+                return redirect('register')
+            else:
+                user = User.objects.create_user(username=username, password=password1, email=email)
+                user.save()
+                return redirect('login')
+        else:
+            messages.info(request, 'Password is not matching')
+            return redirect('register')
+        return redirect('/')
+
     return render(request, 'store/register.html')
 
 
 def reset_password(request):
     return render(request, 'store/resetpass.html')
-

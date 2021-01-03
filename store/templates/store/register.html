@@ -21,38 +21,42 @@
                 <div class="row">
                     <div class="col-xs-12 col-sm-8">
                          <div class="form-login-content d-flex justify-content-center align-items-center">
-                             <div class="form-login-control">
+                             <form class="form-login-control" method="POST">
+                                 {% csrf_token %}
                                 <div class="form-header">
                                     <h2 id="title" class="mt-5">Project Ecomerce Training</h2>
                                    </div>
                                 <div class="form-body">
                                     <div class="form-body-item">
-                                        <input id="user" class="form-control ipt-control" placeholder="User"/>
+                                        <input id="user" class="form-control ipt-control" name="username" placeholder="User"/>
                                         <label for="user" class="lbl-name">Username</label>
                                     </div>
                                     <div class="form-body-item">
-                                        <input id="pass" class="form-control ipt-control" placeholder="Password" type="password"/>
+                                        <input id="pass" class="form-control ipt-control" name="password1" placeholder="Password" type="password"/>
                                         <label for="pass" class="lbl-name">Password</label>
                                     </div>
                                     <div class="form-body-item">
-                                        <input id="confirm_pass" class="form-control ipt-control" placeholder="Confirm password" type="password"/>
+                                        <input id="confirm_pass" class="form-control ipt-control" name="password2" placeholder="Confirm password" type="password"/>
                                         <label for="confirm_pass" class="lbl-name">Confirm password</label>
                                     </div>
                                     <div class="form-body-item">
-                                        <input id="email" class="form-control ipt-control" placeholder="Email" type="email"/>
+                                        <input id="email" class="form-control ipt-control" name="email" placeholder="Email" type="email"/>
                                         <label for="email" class="lbl-name">Email</label>
                                         <small class="text-danger err-msg" id="mess"></small>
+                                        {% for message in messages %}
+                                            <small class="text-danger">{{ message }}</small>
+                                        {% endfor %}
                                     </div>
                                 </div>
                                 <div class="form-footer">
-                                    <button class="btn btn-primary" onclick="login()">Register</button>
+                                    <button class="btn btn-primary">Register</button>
                                     <div>
                                     <small>If you already have an account?
                                         <a href="{% url 'login' %}">Login</a>
                                     </small>
                                     </div>
                                 </div>
-                             </div>
+                             </form>
                          </div>
                     </div>
                     <div class="col-sm-4 bg_img"></div >

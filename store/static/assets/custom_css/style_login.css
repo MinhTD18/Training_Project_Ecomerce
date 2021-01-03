@@ -4,8 +4,6 @@ body{
      background-size: cover;
      background-repeat: no-repeat;
      background-position: center;
-    background-color: #daf1ef;
-
  }
  .form{
      min-height: 100vh;
@@ -26,6 +24,7 @@ body{
      background-color: white;
      border-radius: 20px;
      margin: 0 auto;
+     box-shadow: 10px 10px lightskyblue;
     
  }
  .form-body-item{
