@@ -1,0 +1,10 @@
+.git
+.idea
+projectapp
+projectname
+db.sqlite3
+manage.py
+populate_rango.py
+requirements.txt
+store
+Training_Project_Ecomerce
