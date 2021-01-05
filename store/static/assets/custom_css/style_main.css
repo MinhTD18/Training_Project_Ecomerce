@@ -97,7 +97,7 @@ html{
 
 #nav .subnav a{
     
-    color: #000;
+    color:#5d5d5d;
     padding: 0 16px;
     line-height: 38px;
 }
@@ -125,11 +125,85 @@ html{
 
 }
 
-#slide
-        {   
-  
-        }
+/* slider */
+#slider
+{   
+     margin-top:80px;
+    font-family: sans-serif;
+    overflow-x: hidden;
+}
 
+.contain_slide
+{
+    height: 100hv;
+    overflow: hidden;
+    position: relative;
+}
+
+.contain_slide .slide {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 1;
+    padding: 0 15px;
+    animation: slide 3s ease;
+    display: none;
+
+}
+
+.contain_slide .slide .active
+{
+    display: flex;
+}
+
+@keyframes slide
+{
+0%
+    {
+    transform: scale(1.1);
+    }
+100%
+    {
+    transform: scale(1);
+    }
+}
+
+.container_slide
+{
+    max-width: 1170px;
+    margin: auto;
+}
+
+.contain_slide .container_slide
+{
+    flex-grow: 1;
+}
+
+.contain_slide .caption
+{
+    width: 50%;
+}
+
+.contain_slide .caption h1
+{
+    font-size: 42px;
+    color: #fff;
+    margin: 0;
+}
+
+.contain_slide .slide .active .caption h1
+{
+    opacity: 0;
+    animation: captionText .5s ease forwards;
+    animation-delay: 1s;
+}
+
+.contain_slide
 
 
 #content{
