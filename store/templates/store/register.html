@@ -28,19 +28,19 @@
                                    </div>
                                 <div class="form-body">
                                     <div class="form-body-item">
-                                        <input id="user" class="form-control ipt-control" name="username" placeholder="User"/>
+                                        <input id="user" class="form-control ipt-control" name="username" placeholder="User" required/>
                                         <label for="user" class="lbl-name">Username</label>
                                     </div>
                                     <div class="form-body-item">
-                                        <input id="pass" class="form-control ipt-control" name="password1" placeholder="Password" type="password"/>
+                                        <input id="pass" class="form-control ipt-control" name="password1" placeholder="Password" type="password" required/>
                                         <label for="pass" class="lbl-name">Password</label>
                                     </div>
                                     <div class="form-body-item">
-                                        <input id="confirm_pass" class="form-control ipt-control" name="password2" placeholder="Confirm password" type="password"/>
+                                        <input id="confirm_pass" class="form-control ipt-control" name="password2" placeholder="Confirm password" type="password" required/>
                                         <label for="confirm_pass" class="lbl-name">Confirm password</label>
                                     </div>
                                     <div class="form-body-item">
-                                        <input id="email" class="form-control ipt-control" name="email" placeholder="Email" type="email"/>
+                                        <input id="email" class="form-control ipt-control" name="email" placeholder="Email" type="email" required/>
                                         <label for="email" class="lbl-name">Email</label>
                                         <small class="text-danger err-msg" id="mess"></small>
                                         {% for message in messages %}

@@ -28,11 +28,11 @@
                                 </div>
                                 <div class="form-body">
                                     <div class="form-body-item">
-                                        <input id="user" class="form-control ipt-control" name="username" placeholder="User"/>
+                                        <input id="user" class="form-control ipt-control" name="username" placeholder="User" required/>
                                         <label for="user" class="lbl-name">Username</label>
                                     </div>
                                     <div class="form-body-item">
-                                        <input id="pass" class="form-control ipt-control" name="password" placeholder="Password" type="password"/>
+                                        <input id="pass" class="form-control ipt-control" name="password" placeholder="Password" type="password" required/>
                                         <label for="pass" class="lbl-name">Password</label>
                                     <small class="text-danger err-msg" id="mess"></small>
                                         {% for message in messages %}
