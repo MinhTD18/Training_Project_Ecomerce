@@ -1,6 +1,11 @@
+from django.contrib.auth.views import *
 from django.shortcuts import render, redirect
 from django.contrib.auth.models import User, auth
 from django.contrib import messages
+# from django.contrib.auth.forms import PasswordResetForm
+# from django.contrib.auth.tokens import default_token_generator
+#
+# from store.forms import UserForgotPasswordForm
 
 
 def main(request):
@@ -59,5 +64,30 @@ def register(request):
     return render(request, 'store/register.html')
 
 
-def reset_password(request):
-    return render(request, 'store/resetpass.html')
+class CustomPasswordResetView(PasswordResetView):
+    subject_template_name = 'store/registration/password_reset_subject.txt'
+    email_template_name = 'store/registration/password_reset_email.html'
+    template_name = 'store/registration/password_reset_form.html'
+
+
+class CustomPasswordResetViewDone(PasswordResetDoneView):
+    template_name = 'store/registration/password_reset_done.html'
+
+
+class CustomPasswordResetConfirmView(PasswordResetConfirmView):
+    template_name = 'store/registration/password_reset_confirm.html'
+
+
+class CustomPasswordResetCompleteView(PasswordResetCompleteView):
+    template_name = 'store/registration/password_reset_complete.html'
+
+
+class CustomPasswordChangeView(PasswordChangeView):
+    # template_name = 'store/registration/password_change_form.html'
+    pass
+
+
+class CustomPasswordChangeDoneView(PasswordChangeDoneView):
+    # template_name = 'store/registration/password_change_done.html'
+    pass
+

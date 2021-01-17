@@ -138,3 +138,11 @@ django_heroku.settings(locals())
 # Simplified static file serving.
 # https://warehouse.python.org/project/whitenoise/
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'khactuongtd1@gmail.com'
+EMAIL_HOST_PASSWORD = 'ofgougjufcewsfvs'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+DEFAULT_FROM_EMAIL = 'Training Project Ecommerce Team <noreply@trainingprojectecommerceteam.com>'
