@@ -10,7 +10,7 @@ from django.contrib import messages
 
 def main(request):
     context = {}
-    return render(request, 'store/main.html', context)
+    return render(request, 'store/index.html', context)
 
 
 def cart(request):

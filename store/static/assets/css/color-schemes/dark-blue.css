@@ -1,0 +1,245 @@
+.top-header .top-social li a, 
+.single-side-widget li a,
+.top-header .top-menu li a:hover,
+.menu-block .navbar-default .navbar-nav > li:hover > a::after, 
+.menu-block .navbar-default .navbar-nav > li:focus > a::after, 
+.menu-block .navbar-default .navbar-nav > .active > a::after, 
+.menu-block .navbar-default .navbar-nav > .dropdown.active > a::after, 
+.menu-block .navbar-default .navbar-nav > .active:focus > a::after, 
+.menu-block .navbar-default .navbar-nav > .active:hover > a::after,
+.product-box-inner ul li a, .look-book-img-box-hover ul li a,
+.pillbox a:last-of-type,
+.single-product-sidebar .widget_recent_post .shopping-cart-table table tr td select,
+.review-box .col-md-7 input, 
+.review-box .col-md-7 textarea,
+.contact-form .form-control,
+.shopping-cart .quantity,
+.shopping-product-table .shop_table tbody tr .product-edit .fa,
+.estimate-details .form-control, .estimate-details .form-group select,
+.shopping-cart-table,
+.contact-form, .contact-details,
+.choose-color, .choose-size,
+.contact-form .form-group select,
+.contact-form .radio input[type="radio"] + label::before,
+.billing-information,
+.post-format .entry-date, .post-format .post-formate-icon,
+.widget_recent_tweets .fa,
+.back-to-top {
+	border-color: #6477A1;
+}
+
+.page-wizard li.active a::before, 
+.page-wizard ul li:hover a::before {
+	border-left-color: #6477A1;
+}
+
+.page-wizard li.active > a:focus, 
+.page-wizard li.active > a:hover, 
+.page-wizard li.active > a, 
+.page-wizard li a:focus, 
+.page-wizard li a:hover {
+	 box-shadow: -2px -4px 0 -2px #6477A1 inset;
+}
+
+.cart-dropdown,
+.menu-block .dropdown-menu {
+	border-top-color: #6477A1;
+}
+.mega-dropdown-menu::before {
+    border-bottom-color: #6477A1;
+}
+
+.cart-dropdown::before,
+.navbar .nav > li > .dropdown-menu::after {
+	border-bottom-color: #6477A1;
+}
+
+.top-header .top-social li a, 
+.single-side-widget li a,
+.top-header .top-menu li a,
+.cart-link,
+.slider-section .slider-box h2,
+.logo-search-block .btn-default,
+.category-section .col-md-3 > p,
+.category-section .col-md-6 > h4,
+.mega-menu-column span.sale, 
+.category-box-main .category-box > a > span,
+.main-product .star,
+.entry-title a:hover,
+.read-more,
+.navbar-form .form-group .form-control,
+.widget-title span,
+.widget_list_style ul li > a,
+.widget_facebook .widget-title h4 span,
+.widget_facebook > a,
+.menu-block .navbar-default .navbar-nav > li .dropdown-menu li > a,
+.logo-search-block form select,
+.page-breadcrumb .breadcrumb > .active,
+.return-home-link a,
+.page-header p,
+.product-box-inner ul li a, .look-book-img-box-hover ul li a,
+.main-product:hover > a,
+.pillbox a:last-of-type,
+.single-product .page-header h3 span,
+.widget_recent_post .nav li a,
+.amount,
+.single-product-sidebar .widget_recent_post .shopping-cart-table table tr td select,
+.total-amount,
+.size-chart ol li,
+.single-product-sidebar .widget_recent_post .shopping-cart-table.size-chart table tr td,
+.review-box p i,
+.single-product-sidebar .star li i,
+.single-product-sidebar .page-header,
+.product-edit, .product-delete,
+.page-wizard li.active > a,
+.contact-form .radio label span,
+.billing-information p span,
+.successfully-message .contact-form h2,
+.informational-email h3,
+.post-format .entry-date span,
+.loading, .loading a,
+.widget_categories ul li a, 
+.widget_categories .panel-heading a.collapsed,
+.page-banner > h1,
+.look-book .carousel-caption h1,
+.look-book-img-box-hover > h3,
+.widget_recent_tweets .fa,
+.read-more,
+.cart-dropdown table tr td > a .fa-close,
+.back-to-top,
+.qty, input.qtyplus, input.qtyminus, .qty, input.qtyplus, input.qtyminus,
+.choose-size,
+.widget_search .btn {
+	color: #6477A1;
+}
+
+.cart-dropdown .cart-button a,
+.slider-section .slider-box button, 
+.product-box .product-box-inner .btn,
+.news-letter-section .navbar-form .btn,
+.widget_facebook .widget-title .btn,
+.mega-dropdown .btn-primary,
+.single-product-sidebar .widget_recent_post .shopping-cart-table ul li a,
+.contact-form .btn, 
+.register-user .btn, 
+.estimate-details .btn,
+.shopping-cart-footer a.btn,
+.wizard-footer a.btn,
+.contact-form .radio input[type="radio"]:checked + label::before,
+.error-page .col-md-12 .btn {
+	background-color: #6477A1;
+}
+
+.navbar-form .form-group .form-control::-webkit-input-placeholder { /* WebKit browsers */
+    color: #6477A1;
+}
+
+.navbar-form .form-group .form-control:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color: #6477A1;
+}
+
+.navbar-form .form-group .form-control::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color: #6477A1;
+}
+
+.navbar-form .form-group .form-control:-ms-input-placeholder { /* Internet Explorer 10+ */
+   color: #6477A1;
+}
+
+.logo-search-block input.form-control::-webkit-input-placeholder {
+   color: #6477A1;
+}
+
+.logo-search-block input.form-control:-moz-placeholder { /* Firefox 18- */
+   color: #6477A1;  
+}
+
+.logo-search-block input.form-control::-moz-placeholder {  /* Firefox 19+ */
+   color: #6477A1;  
+}
+
+.logo-search-block input.form-control:-ms-input-placeholder {  
+   color: #6477A1;  
+}
+
+.widget_search .form-control::-webkit-input-placeholder {
+   color: #6477A1;
+}
+
+.widget_search .form-control:-moz-placeholder { /* Firefox 18- */
+   color: #6477A1;  
+}
+
+.widget_search .form-control::-moz-placeholder {  /* Firefox 19+ */
+   color: #6477A1;  
+}
+
+.widget_search .form-control:-ms-input-placeholder {  
+   color: #6477A1;  
+}
+
+.cart-link svg,
+.informational-icons li svg,
+.widget_about svg,
+.news-letter-section .navbar-form .form-group svg,
+.entry-footer span > a svg,
+.post-format .post-formate-icon svg,
+.logo-block svg,
+.single-side-widget li a .qrcode,
+.contact-info p svg,
+.contact-info ul li svg {
+	fill: #6477A1;
+}
+
+.top-header .top-social li a:hover, 
+.single-side-widget li a:hover, 
+.single-side-widget li a:focus, 
+.product-box-inner ul li a:hover, 
+.product-box-inner ul li a:focus, 
+.look-book-img-box-hover ul li a:hover,
+.look-book-img-box-hover ul li a:focus,
+.shopping-cart-table .shop_table > tbody,
+.post-format .entry-date:hover, .post-format .post-formate-icon:hover {
+	border-color: #394e7b;
+}
+
+.top-header .top-social li a:hover, 
+.single-side-widget li a:hover, 
+.single-side-widget li a:focus, 
+.product-box-inner ul li a:hover, 
+.product-box-inner ul li a:focus, 
+.look-book-img-box-hover ul li a:hover,
+.look-book-img-box-hover ul li a:focus,
+.mega-dropdown-menu .dropdown-header,
+.widget_categories .panel-heading a:hover, 
+.widget_categories .panel-heading a, 
+.widget_categories ul li a:hover,
+.widget_recent_entries .latest-post-content h3 > a:hover, 
+.widget_recent_post .tab-content ul li h3 a:hover, 
+.widget_recent_tweets li a:hover span, 
+.widget_recent_entries ul li a:hover,
+.error-page .col-md-12 > h5,
+.error-page .col-md-12 > span > span,
+.read-more,
+.product-total-price table .order-total td .amount {
+	color: #394e7b;
+}
+
+.cart-dropdown .cart-button a:hover,
+.slider-section .slider-box button:hover, 
+.product-box .product-box-inner .btn:hover, 
+.news-letter-section .navbar-form .btn:hover, 
+.single-product-sidebar .widget_recent_post 
+.shopping-cart-table ul li a:hover, 
+.shopping-cart-footer a.btn:hover, 
+.contact-form .btn:hover, 
+.register-user .btn:hover, 
+.estimate-details .btn:hover, 
+.wizard-footer a.btn:hover,
+.mega-dropdown .btn-primary:hover, .mega-dropdown .btn-default:hover,
+.ui-widget-header,
+.single-side-widget.size-widget a.active, 
+.single-side-widget.size-widget a:hover,
+.error-page .col-md-12 .btn:hover {
+	background-color: #394e7b;
+}
