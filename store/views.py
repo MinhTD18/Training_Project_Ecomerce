@@ -36,7 +36,7 @@ def login(request):
             messages.info(request, 'Username or Password is not correct')
             return redirect('login')
     else:
-        return render(request, 'store/login.html')
+        return render(request, 'store/07_login_register.html')
 
 
 def register(request):
@@ -61,7 +61,7 @@ def register(request):
             return redirect('register')
         return redirect('/')
 
-    return render(request, 'store/register.html')
+    return render(request, 'store/05_register.html')
 
 
 class CustomPasswordResetView(PasswordResetView):

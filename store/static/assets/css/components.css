@@ -383,7 +383,7 @@
     -o-animation: loading 2s 1s infinite;
     animation: loading 2s 1s infinite;
 }
-@keyframes "loading" {
+@keyframes loading {
     from {
         left: 0;
     }
@@ -399,7 +399,7 @@
         left: 100%;
     }
 }
-@-webkit-keyframes "loading" {
+@-webkit-keyframes loading {
     from {
         left: 0;
     }
