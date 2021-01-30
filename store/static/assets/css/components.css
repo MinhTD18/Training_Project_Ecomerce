@@ -499,7 +499,7 @@
 	background-repeat: no-repeat;
 }
 .widget_about {
-	background-image: url("../images/icon/map-bg.png");
+	background-image: url("../img/icon/map-bg.png");
 }
 
 .widget_about .widget-title img {
@@ -560,7 +560,7 @@
 }
 
 .widget_about .helpline {
-	background-image: url("../images/icon/phone-icon.png");
+	background-image: url("../img/icon/phone-icon.png");
 }
 
 /* ## widget-list-style ## */
@@ -882,7 +882,7 @@
 }
 
 .widget_recent_post .nav.bottom-shadow:after {
-	background-image: url("../images/recent-post-shadow.png");
+	background-image: url("../img/recent-post-shadow.png");
 }
 
 .widget_recent_post .nav li a {
@@ -1051,7 +1051,7 @@
 .price-input select.minimal,
 .product-search-option select.minimal,
 select.minimal {
-	background-image: url("../images/icon/dropdown-arrow.png");
+	background-image: url("../img/icon/dropdown-arrow.png");
 	background-position:
 		calc(100% - 20px) calc(1em + 2px),
 		calc(100% - 15px) calc(1em + 2px),

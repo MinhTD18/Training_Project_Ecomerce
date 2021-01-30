@@ -20,10 +20,10 @@
 	margin: 0 5px; 
 	text-indent: -9999px;
 }
-.owl-prev {	background-image: url("../../images/icon/prev.png"); }
-.owl-next { 	background-image: url("../../images/icon/next.png"); }
-.owl-prev:hover { background-image: url("../../images/icon/prev-hover.png"); }
-.owl-next:hover { background-image: url("../../images/icon/next-hover.png"); }
+.owl-prev {	background-image: url("../../img/icon/prev.png"); }
+.owl-next { 	background-image: url("../../img/icon/next.png"); }
+.owl-prev:hover { background-image: url("../../img/icon/prev-hover.png"); }
+.owl-next:hover { background-image: url("../../img/icon/next-hover.png"); }
 .owl-buttons
 {
 	text-align: center;
