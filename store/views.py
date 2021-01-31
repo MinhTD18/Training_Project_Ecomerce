@@ -47,17 +47,17 @@ def register(request):
         email = request.POST['email']
         if password1 == password2:
             if User.objects.filter(username=username).exists():
-                messages.info(request, 'Username is taken')
+                messages.info(request, 'User name is taken!')
                 return redirect('register')
             elif User.objects.filter(email=email).exists():
-                messages.info(request, 'Email is taken')
+                messages.info(request, 'Email is taken!')
                 return redirect('register')
             else:
                 user = User.objects.create_user(username=username, password=password1, email=email)
                 user.save()
                 return redirect('login')
         else:
-            messages.info(request, 'Password is not matching')
+            messages.info(request, 'Password is not matching!')
             return redirect('register')
         return redirect('/')
 
