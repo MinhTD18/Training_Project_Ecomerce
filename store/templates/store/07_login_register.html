@@ -333,19 +333,23 @@ Purchase: https://themeforest.net/user/webstrot  -->
 						<h3>Registered User</h3>
 					</div><!-- Section Header Over -->
 					<div class="contact-form bottom-shadow">
-						<form class="form-horizontal login-page">
+						<form class="form-horizontal login-page" method="post">
+                            {% csrf_token %}
 							<div class="form-group">
-								<label class="col-md-4">Email Address</label>
+								<label class="col-md-4">Username</label>
 								<div class="col-md-8">
-									<input type="email" class="form-control" id="txt_email" placeholder="enter your email" required />
+									<input type="username" name="username" class="form-control" id="txt_email" placeholder="enter your username" required />
 								</div>
 							</div>
 							<div class="form-group">
 								<label for="password" class="col-md-4">Password</label>
 								<div class="col-md-8">
-									<input type="password" class="form-control" id="password" placeholder="*****" required />
+									<input type="password" name="password" class="form-control" id="password" placeholder="*****" required />
 								</div>
 							</div>
+                            {% for message in messages %}
+                                <a class="text-danger">&#9888; {{ message }}</a>
+                            {% endfor %}
 							<div class="drop-line bottom-shadow"></div>
 							<div class="form-group">
 								<a title=">Forgot Password " href="#">Forgot your Password ?</a>

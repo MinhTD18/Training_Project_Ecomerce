@@ -31,9 +31,9 @@ def login(request):
         user = auth.authenticate(username=username, password=password)
         if user is not None:
             auth.login(request, user)
-            return redirect('/')
+            return redirect('main')
         else:
-            messages.info(request, 'Username or Password is not correct')
+            messages.info(request, 'Email or Password is not correct')
             return redirect('login')
     else:
         return render(request, 'store/07_login_register.html')
